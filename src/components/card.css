@@ -1,0 +1,55 @@
+.card:hover {
+    width: 20rem;
+    box-shadow: 10px -10px 5px yellow;
+    transition: box-shadow .2s;
+}
+
+.card-header img {
+    width: 18rem;
+    background-image: url(../assets/pikachu.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: start;
+    gap: 1.2rem;
+}
+
+.card-body span{
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: rgba(155, 154, 154, 0.89);
+}
+
+.card-body h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.pokemon-type{
+    display: inline-flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.pokemon-type span {
+    width: 5rem;
+    padding: .5rem;
+
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+
+    border: 1px solid;
+    border-radius: 10px;
+
+    background-color: yellow;
+    color: black;
+
+    
+}
