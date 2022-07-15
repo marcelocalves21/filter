@@ -1,9 +1,9 @@
-import { useState, createContext } from "react"
+import React, { useState, createContext } from "react"
 
-export const PokemonContext = createContext()
+export const PokemonContext = createContext({})
 
-const PokemonContextProvider = (props) => {
-    const [pokemons, setPokemons] = useState([
+const PokemonProvider = (props) => {
+    const [pokemonsList, setPokemonsList] = useState([
         {
             name: 'Bulbasaur',
             img: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png',
@@ -300,11 +300,16 @@ const PokemonContextProvider = (props) => {
         }
     
     ])
+    const [pokemonsType, setPokemonsType] = useState(pokemonsList)
     return (
-        <PokemonContextProvider.Provider value={{pokemons: pokemons}}>
+        <PokemonContext.Provider value={{
+            pokemons:pokemonsList, 
+            pokemonsType: pokemonsType,
+            setPokemonsType: setPokemonsType
+        }}>
             {props.children}
-        </PokemonContextProvider.Provider>
+        </PokemonContext.Provider>
     )
 }
 
-export default PokemonContextProvider
+export default PokemonProvider
