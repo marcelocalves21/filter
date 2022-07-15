@@ -7,32 +7,32 @@
 }
 
 .card-grass:hover{
-    box-shadow: 0 0 10px #9BCC50;
+    box-shadow: 0 0 30px #9BCC50;
     transition: box-shadow .2s;
 }
 
 .card-fire:hover{
-    box-shadow: 0 0 10px #FD7D24;
+    box-shadow: 0 0 30px #FD7D24;
     transition: box-shadow .2s;
 }
 
 .card-bug:hover{
-    box-shadow: 0 0 10px #729F3F;
+    box-shadow: 0 0 30px #729F3F;
     transition: box-shadow .2s;
 }
 
 .card-electric:hover{
-    box-shadow: 0 0 10px #EED535;
+    box-shadow: 0 0 30px #EED535;
     transition: box-shadow .2s;
 }
 
 .card-water:hover{
-    box-shadow: 0 0 10px #4592C4;
+    box-shadow: 0 0 30px #4592C4;
     transition: box-shadow .2s;
 }
 
 .card-ghost:hover{
-    box-shadow: 0 0 10px #7A61A2;
+    box-shadow: 0 0 30px #7A61A2;
     transition: box-shadow .2s;
 }
 
