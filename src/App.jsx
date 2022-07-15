@@ -1,12 +1,13 @@
-
+import { useContext } from 'react'
+import { PokemonContext } from './Context/PokemonContextProvider'
 import './App.css'
 import { Card } from './components/Card/Card'
 import { Navbar } from './components/Navbar/Navbar'
 
-import { pokemons } from './constants/pokemon'
 
 function App() {
-
+  const {pokemons} = useContext(PokemonContext)
+  console.log(pokemons)
   return (
     <>
       <Navbar />
